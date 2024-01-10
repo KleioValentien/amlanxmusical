@@ -1,0 +1,534 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="webthemez.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMLAN X MUSICAL</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css"> 
+<link href="jPlayer-2.9.2/dist/skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="banner" role="banner" id="banner">
+  <header id="header">
+    <div class="header-content clearfix"> <span class="logo"><a href="index.html"></a></span>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		  <li><a href="#banner">Home</a></li>
+          <li><a href="#intro">About</a></li>
+          <li><a href="#services">We Do</a></li>
+          <li><a href="#Playlist">Playlist</a></li>
+		  <li><a href="#package">Albums</a></li>
+          <li><a href="#gallery">Events</a></li>
+          <li><a href="#teams">Our Team</a></li> 
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!-- banner text -->
+  <div class="container">
+    <div class="col-md-10">
+      <div class="banner-text text-center">
+        <h1>AMLAN X MUSICAL</h1>
+        <p>Hello Welcome To AMLAN X MUSICAL</p></div>
+      <!-- banner text --> 
+    </div>
+  </div>
+</section>
+<!-- header section --> 
+<!-- intro section -->
+<section id="intro" class="section intro">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3>AMLAN JYOTI DEV NATH MUSICAL</h3>
+      <p>
+"Amlan Jyoti Devnath, based in the cultural hub of Sivasagar, Assam, is a versatile musician known for his multifaceted talent in creating diverse music genres. Primarily focused on Assamese songs, Amlan skillfully traverses various musical styles, showcasing a rich blend of melodies and rhythms that encapsulate the essence of Assamese culture. His music resonates with authenticity and captures the soul of the region, reflecting his deep-rooted connection to the vibrant musical heritage of Assam." 
+
+</p> 
+        <a href="#Playlist" class="btn btn-large">Playlist</a> 
+    </div>
+  </div>
+</section>
+
+</section>
+<!-- services section --> 
+
+<section id="Playlist" class="playlistList">
+  <div class="container">
+      <div class="section-header">
+                <h2 class="wow fadeInDown animated">Playlist</h2>
+                <p class="wow fadeInDown animated">Welcome to Amlan Jyoti Devnath's musical realm! Nestled in the heart of Sivasagar, Assam, Amlan is a passionate musician crafting a tapestry of melodies that echo the essence of Assamese culture. Delve into a sonic journey through his diverse collection, spanning various genres and exclusively featuring soulful Assamese compositions. Embrace the vibrancy of Assam's musical heritage as each song weaves tales of tradition, love, and life. Join Amlan on this musical odyssey, where every note resonates with the spirit of the region. Discover, immerse, and enjoy his creations, all available here for your listening pleasure</p>
+            </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Music Playlist</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .playlist {
+            max-width: 800px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .song-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .song-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .song-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .song-details {
+            padding: 10px;
+        }
+
+        .song-title {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .album-name {
+            margin: 5px 0;
+        }
+
+        .download-btn {
+            display: block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .control-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .control-buttons button {
+            margin: 0 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            outline: none;
+        }
+
+        .control-buttons button.playing {
+            background-color: #28a745;
+        }
+
+        .control-buttons button:hover {
+            transform: scale(1.1);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #28a745;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #007bff;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="playlist">
+        <!-- Song 1 -->
+        <div class="song-item">
+            <img class="song-img" src="album1.jpg" alt="Album Image">
+            <div class="song-details">
+                <p class="song-title">Song Title 1</p>
+                <p class="album-name">Album: Album Name 1</p>
+                <a href="song1.mp3" download class="download-btn">Download</a>
+                <div class="control-buttons">
+                    <button onclick="togglePlayPause('audio1', this)" class="play-btn">&#9654;</button>
+                    <input type="range" id="seekbar1" value="0" step="0.01" oninput="seekAudio('audio1', this)">
+                    <button onclick="shuffleToggle(this)" class="shuffle-btn">&#128256;</button>
+                    <button onclick="loopToggle(this)" class="loop-btn">&#8635;</button>
+                </div>
+                <div class="progress-bar">
+                    <progress id="progress1" value="0" max="1"></progress>
+                </div>
+            </div>
+            <audio id="audio1" src="song1.mp3" ontimeupdate="updateProgress('audio1', 'progress1', 'seekbar1')"></audio>
+        </div>
+
+        <!-- Song 2 -->
+        <div class="song-item">
+            <img class="song-img" src="album2.jpg" alt="Album Image">
+            <div class="song-details">
+                <p class="song-title">Song Title 2</p>
+                <p class="album-name">Album: Album Name 2</p>
+                <a href="song2.mp3" download class="download-btn">Download</a>
+                <div class="control-buttons">
+                    <button onclick="togglePlayPause('audio2', this)" class="play-btn">&#9654;</button>
+                    <input type="range" id="seekbar2" value="0" step="0.01" oninput="seekAudio('audio2', this)">
+                    <button onclick="shuffleToggle(this)" class="shuffle-btn">&#128256;</button>
+                    <button onclick="loopToggle(this)" class="loop-btn">&#8635;</button>
+                </div>
+                <div class="progress-bar">
+                    <progress id="progress2" value="0" max="1"></progress>
+                </div>
+            </div>
+            <audio id="audio2" src="song2.mp3" ontimeupdate="updateProgress('audio2', 'progress2', 'seekbar2')"></audio>
+        </div>
+
+        <!-- Add more songs following the same structure -->
+    </div>
+
+    <script>
+        function togglePlayPause(id, button) {
+            var audio = document.getElementById(id);
+            if (audio.paused || audio.ended) {
+                audio.play();
+                button.classList.add('playing');
+                button.innerHTML = '&#10074;&#10074;'; // Pause icon
+            } else {
+                audio.pause();
+                button.classList.remove('playing');
+                button.innerHTML = '&#9654;'; // Play icon
+            }
+        }
+
+        function shuffleToggle(button) {
+            button.classList.toggle('playing');
+        }
+
+        function loopToggle(button) {
+            button.classList.toggle('playing');
+        }
+
+        function seekAudio(id, seekbar) {
+            var audio = document.getElementById(id);
+            audio.currentTime = audio.duration * (seekbar.value / 100);
+        }
+
+        function updateProgress(audioId, progressBarId, seekbarId) {
+            var audio = document.getElementById(audioId);
+            var progressBar = document.getElementById(progressBarId);
+            var seekbar = document.getElementById(seekbarId);
+
+            var progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.value = progress;
+            seekbar.value = progress;
+        }
+    </script>
+</body>
+
+</html>
+
+    <div class="row">  
+            <div class="col-md-6">
+            
+<body>
+  <h1>Under Construction</h1>
+  <p>We're working hard to bring you an amazing musical experience. Stay tuned!</p>
+</body>
+</html>
+
+</section>
+<!-- package section --> 
+
+<!-- gallery section -->
+<section id="gallery" class="gallery section">
+  <div class="container-fluid">
+    <div class="section-header">
+                <h2 class="wow fadeInDown animated">Events</h2>
+                <p class="wow fadeInDown animated"></p>
+            </div>
+    <body>
+  <h1>Under Construction</h1>
+  <p>We're working hard to bring you an amazing musical experience. Stay tuned!</p>
+</body>
+<!-- our team section -->
+<section id="tours" class="section teams"> 
+	<div class="container">
+	    <div class="section-header">
+                <h2 class="wow fadeInDown animated">Upcoming Songs</h2>
+                <p class="wow fadeInDown animated">"Prepare to embark on a musical voyage like never before! Amlan Jyoti Devnath's upcoming songs promise a fusion of tradition and innovation, weaving a tapestry of captivating melodies that transcend boundaries. Each note carries the essence of Assamese culture, reimagined with contemporary flair. Get ready to immerse yourself in a symphony of emotions, as these upcoming compositions narrate tales of love, heritage, and life's intricate moments. Stay tuned for a musical experience that will resonate with your heart and soul."
+</p>
+            </div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="images/pic2.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-11">
+					<h3>Our UPCOMING PROJECTS</h3>
+					<ul class="tour-list">
+						<li>
+							<div class="tour-date">16<span>Feb<br><em>2024</em></span></div>
+							<div class="tour-info">1<a href="#">PRANJIT</a></div>
+							<div class="tour-ticket"><a href="#">GET NOTIFICATION</a></div>
+						</li>
+						<li>
+							<div class="tour-date">22<span>Mar<br><em>2024</em></span></div>
+							<div class="tour-info">2- <a href="#">PRANJIT</a></div>
+							<div class="tour-ticket"><a href="#">GET NOTIFICATION</a></div>
+						</li>
+						<li>
+							<div class="tour-date">12<span>April<br><em>2024</em></span></div>
+							<div class="tour-info">3 - <a href="#">PRANJIT</a></div>
+							<div class="tour-ticket"><a href="#">GET NOTIFICATIONt</a></div>
+						</li>
+						<li>
+							<div class="tour-date">26<span>April<br><em>2024</em></span></div>
+							<div class="tour-info">4 <a href="#">PRANJIT</a></div>
+							<div class="tour-ticket"><a href="#">GET NOTIFICATION</a></div>
+						</li>
+						<li>
+							<div class="tour-date">10<span>June<br><em>2029</em></span></div>
+							<div class="tour-info">5 - <a href="#">PRANJIT</a></div>
+							<div class="tour-ticket"><a href="#">GET NOTIFICATION</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ </section>
+
+<!-- our team section -->
+<section id="teams" class="section teams">
+  <div class="container">
+      <div class="section-header">
+                <h2 class="wow fadeInDown animated">OWNER/FOUNDER</h2>
+                <p class="wow fadeInDown animated">"Meet the maestro behind the melodies, Mr. Amlan Jyoti Devnath. With a passion for music that knows no bounds, Amlan is the driving force shaping the musical landscape. Hailing from the cultural haven of Sivasagar, Assam, his dedication to preserving and innovating Assamese music is unparalleled. As the creative mind and soulful heart behind the compositions, Amlan infuses every note with the richness of tradition and the spirit of modernity. His commitment to sharing the beauty of Assam's musical heritage resonates in every tune, weaving a captivating tapestry of harmonies that enchant audiences worldwide."</p>
+            </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="person"><img src="images/team-1.jpg" alt="" class="img-responsive">
+          <div class="person-content">
+            <h4>Amlan Jyoti Dev Nath</h4>
+            <h5 class="role">OWNER/FOUNDER</h5>
+            <p>"Harmonizing Traditions, Inspiring Souls: Amlan Jyoti Devnath's Musical Odyssey."</p>
+          </div>
+          
+</section>
+<!-- our team section --> 
+<!-- Testimonials section -->
+<section id="testimonials" class="section testimonials no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"⭐️⭐️⭐️⭐️⭐️ - 'Mesmerizing melodies that transport listeners. Amlan's music captivates the soul.' </h1>
+                <p>PRANJIT GOGOI</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"⭐️⭐️⭐️⭐️ - 'Amlan's tunes are a breath of fresh air! Each note tells a story.'</h1>
+                <p>BIKROM BORUAH</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"⭐️⭐️⭐️⭐️⭐️ - 'Impeccable fusion of tradition and modernity. Amlan's music is a treasure.'" </h1>
+                <p>AJANTA DUTTA</p>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="col-md-12">
+              <blockquote>
+                <h1>"⭐️⭐️⭐️⭐️ - 'Elegantly crafted compositions. Amlan's music is a cultural celebration.'"</h1>
+                <p>ANONYMUS</p>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials section --> 
+
+<!-- contact section -->
+<section id="contact" class="section">
+  <div class="container">
+      <div class="section-header">
+                <h2 class="wow fadeInDown animated">Contact Us</h2>
+                <p class="wow fadeInDown animated">Hey there! Got something to share or just want to connect? Feel free to drop a line! We're all ears for your thoughts and feedback. Whether it's about the music, collaborations, or just a friendly chat, we'd love to hear from you.</p>
+            </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 conForm">       
+        <div id="message"></div>
+        <form method="post" action="php/contact.php" name="cform" id="cform">
+          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
+          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
+          <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
+          <div id="simple-msg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+    </div>
+	 </div>
+<div class="col_w420 float_r" id="map">
+					<h3>Our Location</h3>
+					<a href="images/map_big.PNG" title="Our Location">
+						<img src="images/map.png" alt="Our Location"
+						<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the button with CSS */
+        .view-map-button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="view-map-button" onclick="openMap()">View in Map</button>
+
+    <script>
+        // JavaScript function to open the map in a new tab or window
+        function openMap() {
+            // Replace 'https://maps.app.goo.gl/y8omHuPdCeoTtfUe8' with the URL of the map you want to open
+            var mapURL = 'https://www.google.com/maps/place/Gitanjali+Creation/@26.9200372,94.6470924,14z/data=!4m6!3m5!1s0x3747373da1921ea7:0xf7321fd3af3c5518!8m2!3d26.920262!4d94.6467598!16s%2Fg%2F11h51kc6k3!5m1!1e4?entry=ttu';
+            window.open(mapURL, '_blank');
+        }
+    </script>
+</body>
+</html>
+</div>
+</footer>
+<!-- Footer section --> 
+<!-- JS FILES --> 
+<div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
+    		<h2 style="margin-top:0;color:#fff;">Contact us</h2>
+    		<address style="color:#fff;">
+    			<strong>AMLAN X MUSICAL</strong><br>
+    			1234 <br>
+    			1234<br>
+    			1234<br>
+    			785666<br>
+    			<abbr title="Phone">Tel:</abbr> 0000000000
+    		</address>
+			  © 2023 AMLAN X MUSICAL. <a href="" target="_blank">Designed by </a> PRANJIT GOGOI
+    	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+
+<script type="text/javascript" src="jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="jPlayer-2.9.2/dist/add-on/jplayer.playlist.min.js"></script> 
+<script type="text/javascript">
+</script>
+</body>
+</html>
