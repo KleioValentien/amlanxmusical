@@ -505,79 +505,148 @@
 <section id="contact" class="section">
   <div class="container">
       <div class="section-header">
-                <h2 class="wow fadeInDown animated">Contact Us</h2>
-                <p class="wow fadeInDown animated">Hey there! Got something to share or just want to connect? Feel free to drop a line! We're all ears for your thoughts and feedback. Whether it's about the music, collaborations, or just a friendly chat, we'd love to hear from you.</p>
-            </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 conForm">       
-        <div id="message"></div>
-        <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
-          <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-          <div id="simple-msg"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-    </div>
-	 </div>
-<div class="col_w420 float_r" id="map">
-					<h3>Our Location</h3>
-					<a href="images/map_big.PNG" title="Our Location">
-						<img src="images/map.png" alt="Our Location"
-						<!DOCTYPE html>
-<html>
+                <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <style>
-        /* Style the button with CSS */
-        .view-map-button {
-            background-color: #008CBA;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px 2px;
-            cursor: pointer;
+        body {
+            
+
+        h1 {
+            color: #3498db;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #3498db;
             border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <button class="view-map-button" onclick="openMap()">View in Map</button>
+
+    <div class="contact-tab" onclick="toggleContactForm()">Contact Us</div>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Feel free to send us a message:</p>
+
+        <form id="contactForm">
+            <center><div class="input-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Type your message here..." required></textarea>
+            </div></center>
+
+            <button type="button" onclick="sendMessage()">Send Message</button>
+        </form>
+    </div>
 
     <script>
-        // JavaScript function to open the map in a new tab or window
-        function openMap() {
-            // Replace 'https://maps.app.goo.gl/y8omHuPdCeoTtfUe8' with the URL of the map you want to open
-            var mapURL = 'https://www.google.com/maps/place/Gitanjali+Creation/@26.9200372,94.6470924,14z/data=!4m6!3m5!1s0x3747373da1921ea7:0xf7321fd3af3c5518!8m2!3d26.920262!4d94.6467598!16s%2Fg%2F11h51kc6k3!5m1!1e4?entry=ttu';
-            window.open(mapURL, '_blank');
+        function toggleContactForm() {
+            var contactForm = document.querySelector('.contact-container');
+            contactForm.style.display = (contactForm.style.display === 'none' || contactForm.style.display === '') ? 'block' : 'none';
+        }
+
+        function sendMessage() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // Replace 'YOUR_BOT_TOKEN' and 'YOUR_CHAT_ID' with your actual bot token and chat ID
+            var botToken = '6762996702:AAGHlcroWwyEB8CaKELzLWKIzQSVnQEtjEA';
+            var chatId = '-1002122797489';
+
+            // Construct the URL for the Telegram Bot API
+            var apiUrl = 'https://api.telegram.org/bot' + botToken + '/sendMessage?chat_id=' + chatId + '&text=' +
+                encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+            // Use Fetch API to send the message
+            fetch(apiUrl, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert('Message sent successfully!');
+                    } else {
+                        alert('Failed to send message. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while sending the message. Please try again later.');
+                });
         }
     </script>
+
 </body>
 </html>
-</div>
-</footer>
-<!-- Footer section --> 
-<!-- JS FILES --> 
- <div id="templatemo_bottom_bg">
-    	<div class="templatemo_container">
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <center><div class="copyright">
+        &copy; Copyright <strong><span>GOGOI TECH STUDIOS</span></strong>
+      </div>
+      <div class="credits">
         
-    		<div id="templatemo_footer">
-            	<div class="templatemo_footer_section">
-                <div class="templatemo_footer_section">
-                	Copyright © 2048 <a href="#">AMLAN X MUSICAL</a><br /><br />
-                    <a href="" target="_parent">Website Designed and Developed</a> by
-                    <a href="" target="_parent">PRANJIT GOGOI</a>                
-                </div>
-          </div>
-            
-		</div>
-	</div>
+        Designed by <a href="">PRANJIT GOGOI</a></center>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.flexslider-min.js"></script> 
